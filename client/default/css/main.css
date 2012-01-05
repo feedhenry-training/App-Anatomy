@@ -16,7 +16,7 @@ p {
 }
 
 #reload_wrapper {
-  padding:0 20px;
+  padding:0px 20px;
 }
 
 #reload_wrapper input {
@@ -57,7 +57,6 @@ p {
 
 #menu {
   height:35px;
-  padding:5px 20px 5px 20px;
 }
 
 #menu .nav_item {
@@ -89,5 +88,5 @@ p {
 }
 
 #menu .button_active {
-  background-position:0 -100px;
+  background-position:0 0px;
 }
