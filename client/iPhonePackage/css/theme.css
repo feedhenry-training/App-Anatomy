@@ -1,0 +1,25 @@
+#content {
+  background-color: #eee;
+  font-family: Helvetica;
+  text-align: justify;
+  margin: 0px;
+}
+
+#reload_wrapper {
+  background-color: #eee;
+  padding:20px 20px;
+}
+
+#header {
+   background-image:url(../img/button_sprite.png);
+   background-repeat:repeat-x;
+}
+
+p {
+  background-color: #fff;
+  color: #000
+}
+
+a: {
+  color: #2879c7;
+}
