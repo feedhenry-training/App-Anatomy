@@ -66,7 +66,6 @@ body {
 }
 
 #menu .button_active {
-  font-weight:900;
   border-radius: 8px;
   background-repeat: no-repeat; 
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#616161), color-stop(50%,#434343), color-stop(50%,#353535), color-stop(100%,#333333));
