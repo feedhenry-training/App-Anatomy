@@ -1,6 +1,10 @@
 p {
+  position: relative;
+  top: -10px;
   background-color: #fff;
-  color: #000
+  padding: 0px 6px 3px 6px;
+  border-radius: 5px;
+  border: solid 1px;
 }
 
 a: {
@@ -13,18 +17,20 @@ body {
 
 #content {
   background-color: #eee;
+  padding: 0px 5px 0px 5px;
   font-family: Arial;
-  font-size: 0.7em;
+  font-size: 0.8em;
   text-align: justify;
+  margin: 0px ;
 }
 
 #reload_wrapper {
   background-color: #eee;
-  padding: 20px;
+  padding: 10px 15px 20px 15px;
 }
 
 #logo img {
-  height:8%;
+  height:9.5%;
 }
 
 #logo {
@@ -41,32 +47,10 @@ body {
     color-stop(0.46, #3063D0),
     color-stop(0.89, #81A8E3)
   );
+  border-bottom-style:solid;
+  border-width:1px;
 }
 
-#menu #cloud h2{
-  background-size: 25px;
-  background-image:url(../img/cloud.png); 
-  background-repeat: no-repeat;
-  background-position: center 12px;
-}
-#menu #packages h2{
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position: center 10px;
-  background-image:url(../img/packages.png); 
-}
-#menu #index h2{
-  background-size: 17px;
-  background-repeat: no-repeat;
-  background-position: center 10px;
-  background-image:url(../img/notes.png); 
-}
-#menu #intro h2{
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center 10px;
-  background-image:url(../img/intro.png); 
-}
 
 #menu{
   height: 50px;
@@ -87,3 +71,64 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#616161), color-stop(50%,#434343), color-stop(50%,#353535), color-stop(100%,#333333));
   background: -webkit-linear-gradient(top, #616161 0%,#434343 50%,#353535 50%,#333333 100%);
 }
+
+#menu #cloud h2{
+  background-size: 25px;
+  background-image:url(../img/cloud.png); 
+  background-repeat: no-repeat;
+  background-position: center 12px;
+}
+#menu #cloud h2:hover,
+#menu #cloud h2:focus:hover {
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center 12px;
+  background-image:url(../img/cloud_active.png); 
+}
+
+#menu #packages h2{
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-image:url(../img/packages.png); 
+}
+#menu #packages h2:hover,
+#menu #packages h2:focus:hover {
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-image:url(../img/packages_active.png); 
+}
+
+#menu #index h2{
+  background-size: 17px;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-image:url(../img/index.png); 
+}
+#menu #index h2:hover,
+#menu #index h2:focus:hover {
+  background-size: 17px;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-image:url(../img/index_active.png); 
+}
+
+#menu #intro h2{
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-image:url(../img/intro.png); 
+}
+#menu #intro h2:hover,
+#menu #intro h2:focus:hover {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-image:url(../img/intro_active.png); 
+}
+
+#wrapper {
+  background-color:#eee;
+}
+
