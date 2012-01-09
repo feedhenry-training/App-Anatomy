@@ -1,0 +1,72 @@
+p {
+  color: white;
+}
+
+a: {
+   color: #2879c7;
+}
+
+body {
+   background-color: black; 
+}
+
+#wrapper {
+  background-color: transparent;
+  background-image: none;
+}
+
+#content {
+  background-color: transparent;
+  margin: 0 5px;
+  border: 0px;
+}
+
+#menu {
+  padding: 0px 0px 0px 0px;
+  height: 40px;
+}
+
+#menu h2 {
+  padding-top: 24px;  
+}
+
+#menu .nav_item {
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #C0C0C0;
+    background-position: center 4px;
+}
+
+#menu #intro.nav_item {
+   background-image: url("../img/intro.png");
+}
+
+#menu #index.nav_item {
+   background-image: url("../img/index.png");
+}
+
+#menu #packages.nav_item {
+   background-image: url("../img/packages.png");
+}
+
+#menu #cloud.nav_item {
+   background-image: url("../img/cloud.png");
+}
+
+#menu .button_active {
+   background-color: #C0C0C0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
