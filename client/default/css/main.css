@@ -73,10 +73,10 @@ p {
 .nav_item {
   cursor:pointer;
 }
+
 .nav_item.button_active {
   cursor:default;
 }
-
 
 #menu h2 {
   font-size:10px;
