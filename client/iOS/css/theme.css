@@ -34,21 +34,12 @@ body {
 }
 
 #logo {
-  background-image: linear-gradient(bottom, #3063D0 46%, #81A8E3 89%);
-  background-image: -o-linear-gradient(bottom, #3063D0 46%, #81A8E3 89%);
-  background-image: -moz-linear-gradient(bottom, #3063D0 46%, #81A8E3 89%);
-  background-image: -webkit-linear-gradient(bottom, #3063D0 46%, #81A8E3 89%);
-  background-image: -ms-linear-gradient(bottom, #3063D0 46%, #81A8E3 89%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bccd), color-stop(50%,#889bb3), color-stop(50%,#8195af), color-stop(100%,#6d84a2));
+  background: -webkit-linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
+  background: linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
   
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.46, #3063D0),
-    color-stop(0.89, #81A8E3)
-  );
-  border-bottom-style:solid;
-  border-width:1px;
+  border-top: 1px solid #cdd5df;
+  border-bottom: 1px solid #2d3642;
 }
 
 
@@ -67,6 +58,7 @@ body {
 
 #menu .button_active {
   border-radius: 8px;
+  margin: 4px 0px;
   background-repeat: no-repeat; 
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#616161), color-stop(50%,#434343), color-stop(50%,#353535), color-stop(100%,#333333));
   background: -webkit-linear-gradient(top, #616161 0%,#434343 50%,#353535 50%,#333333 100%);
