@@ -1,9 +1,9 @@
 p {
   position: relative;
-  background-color: #fff;
   padding: 0px 6px 3px 6px;
-  border-radius: 10px;
-  border: solid 1px;
+  color: #3B455B; 
+  text-shadow: 0px 1px #fff; 
+  font-weight: 500;
 }
 
 *{
@@ -21,29 +21,41 @@ body {
 }
 
 #content {
-  background-color: #eee;
+  background-image: url(../img/iOSbackground.png); 
+  background-size: 15%;
   padding: 0px 5px 0px 5px;
-  font-family: Arial;
-  font-size: 0.725em;
+  font-family: Helvetica;
+  font-size: 0.8em;
   text-align: justify;
   margin: 0px ;
   position: relative;
 }
 
+#wrapper {
+  background-image: url(../img/iOSbackground.png); 
+  background-size: 15%;
+}
+
 #reload_wrapper {
-  background-color: #eee;
-  padding: 10px 15px 20px 15px;
+  background-image: url(../img/iOSbackground.png);
+  background-size: 15%; 
+  position: relative;
+  top: 13px; 
+  padding: 10px 15px 10px 15px;
 }
 
 #logo img {
   height:9.5%;
 }
 
+#header{
+  background: transparent; 
+}
+
 #logo {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bccd), color-stop(50%,#889bb3), color-stop(50%,#8195af), color-stop(100%,#6d84a2));
   background: -webkit-linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
   background: linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
-  
   border-top: 1px solid #cdd5df;
   border-bottom: 1px solid #2d3642;
 }
@@ -80,7 +92,7 @@ body {
 
 #menu #cloud h2{
   background-size: 25px;
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
   background-image:url(../img/cloud.png); 
   background-position: center 12px;
 }
@@ -126,8 +138,5 @@ body {
   background-image:url(../img/intro_active.png); 
 }
 
-#wrapper {
-  background-color: #eee;
-  position:relative;
-}
+
 
