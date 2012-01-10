@@ -52,6 +52,7 @@ body {
 
 #menu{
   height: 50px;
+  padding: 0px;
   z-index: 1;
   position: relative;
   background: #3a3a3a;
