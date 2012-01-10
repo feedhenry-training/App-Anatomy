@@ -87,5 +87,5 @@ p {
 }
 
 #menu .button_active {
-  background-position:0 0px;
+  background-position:0 -100px;
 }
