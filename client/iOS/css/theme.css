@@ -52,7 +52,6 @@ body {
 
 #menu{
   height: 50px;
-  padding: 0px;
   z-index: 1;
   position: relative;
   background: #3a3a3a;
@@ -81,14 +80,12 @@ body {
 
 #menu #cloud h2{
   background-size: 25px;
-  background-image:url(../img/cloud.png); 
   background-repeat: no-repeat;
+  background-image:url(../img/cloud.png); 
   background-position: center 12px;
 }
 #menu #cloud h2:hover,
 #menu #cloud h2:focus:hover {
-  background-size: 25px;
-  background-repeat: no-repeat;
   background-position: center 12px;
   background-image:url(../img/cloud_active.png); 
 }
@@ -101,8 +98,6 @@ body {
 }
 #menu #packages h2:hover,
 #menu #packages h2:focus:hover {
-  background-size: 22px;
-  background-repeat: no-repeat;
   background-position: center 10px;
   background-image:url(../img/packages_active.png); 
 }
@@ -115,8 +110,6 @@ body {
 }
 #menu #index h2:hover,
 #menu #index h2:focus:hover {
-  background-size: 17px;
-  background-repeat: no-repeat;
   background-position: center 10px;
   background-image:url(../img/index_active.png); 
 }
@@ -129,8 +122,6 @@ body {
 }
 #menu #intro h2:hover,
 #menu #intro h2:focus:hover {
-  background-size: 20px;
-  background-repeat: no-repeat;
   background-position: center 10px;
   background-image:url(../img/intro_active.png); 
 }
@@ -139,5 +130,4 @@ body {
   background-color: #eee;
   position:relative;
 }
-
 
