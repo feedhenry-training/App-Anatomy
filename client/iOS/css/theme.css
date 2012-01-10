@@ -1,9 +1,8 @@
 p {
   position: relative;
-  top: -10px;
   background-color: #fff;
   padding: 0px 6px 3px 6px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: solid 1px;
 }
 
@@ -15,17 +14,20 @@ a: {
   color: #2879c7;
 }
 
+
 body {
-  background-color: black; 
+  background-color: black;
+  position : relative;
 }
 
 #content {
   background-color: #eee;
   padding: 0px 5px 0px 5px;
   font-family: Arial;
-  font-size: 0.8em;
+  font-size: 0.725em;
   text-align: justify;
   margin: 0px ;
+  position: relative;
 }
 
 #reload_wrapper {
@@ -47,11 +49,18 @@ body {
 }
 
 
+
 #menu{
   height: 50px;
+  z-index: 1;
+  position: relative;
   background: #3a3a3a;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a3a3a), color-stop(50%,#141414), color-stop(50%,#000000), color-stop(100%,#000000));
   background: -webkit-linear-gradient(top,  #3a3a3a 0%,#141414 50%,#000000 50%,#000000 100%);  
+}
+
+.main_view {
+   position: relative;
 }
 
 #menu h2 {
@@ -126,6 +135,8 @@ body {
 }
 
 #wrapper {
-  background-color:#eee;
+  background-color: #eee;
+  position:relative;
 }
+
 
