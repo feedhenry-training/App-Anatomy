@@ -107,9 +107,7 @@ body {
 
 #menu #packages h2{
   background-size: 22px;
-  background-repeat: no-repeat;
   background-position: center 10px;
-  background-image:url(../img/packages.png); 
 }
 #menu #packages h2:hover,
 #menu #packages h2:focus:hover {
@@ -119,9 +117,7 @@ body {
 
 #menu #index h2{
   background-size: 17px;
-  background-repeat: no-repeat;
   background-position: center 10px;
-  background-image:url(../img/index.png); 
 }
 #menu #index h2:hover,
 #menu #index h2:focus:hover {
@@ -131,15 +127,10 @@ body {
 
 #menu #intro h2{
   background-size: 20px;
-  background-repeat: no-repeat;
   background-position: center 10px;
-  background-image:url(../img/intro.png); 
 }
 #menu #intro h2:hover,
 #menu #intro h2:focus:hover {
   background-position: center 10px;
   background-image:url(../img/intro_active.png); 
 }
-
-
-

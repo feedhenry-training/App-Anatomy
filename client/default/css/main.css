@@ -89,6 +89,31 @@ p {
   line-height:10px;
 }
 
-#menu .button_active {
-  background-position:0 -100px;
+#menu #cloud h2{
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-image:url(../img/cloud.png); 
+  background-position: center 12px;
+}
+
+#menu #packages h2{
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-image:url(../img/packages.png); 
+}
+
+#menu #index h2{
+  background-size: 17px;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-image:url(../img/index.png); 
+}
+
+
+#menu #intro h2{
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-image:url(../img/intro.png); 
 }

@@ -1,24 +1,23 @@
+/* Give our app a new color scheme. The app is going to be black, with white/off-white text */
 p {
   color: white;
 }
-
 a: {
    color: #2879c7;
 }
-
 body {
    background-color: black; 
 }
 
-#wrapper {
+#wrapper, #content {
   background-color: transparent;
   background-image: none;
 }
 
+/* Setup our layout so the navigation looks like android, at the top of the page. */
+
 #content {
-  background-color: transparent;
   margin: 0 5px;
-  border: 0px;
 }
 
 #menu {
@@ -34,22 +33,6 @@ body {
     background-repeat: no-repeat;
     border-bottom: 2px solid #C0C0C0;
     background-position: center 4px;
-}
-
-#menu #intro.nav_item {
-   background-image: url("../img/intro.png");
-}
-
-#menu #index.nav_item {
-   background-image: url("../img/index.png");
-}
-
-#menu #packages.nav_item {
-   background-image: url("../img/packages.png");
-}
-
-#menu #cloud.nav_item {
-   background-image: url("../img/cloud.png");
 }
 
 #menu .button_active {
