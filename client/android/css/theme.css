@@ -25,8 +25,11 @@ body {
   height: 40px;
 }
 
-#menu h2 {
-  padding-top: 28px;  
+#menu .nav_item h2 {
+  padding-top: 28px;
+  background-color: #000;
+  background-size: 25px;
+  background-position: center 2px;
 }
 
 #menu .nav_item {
@@ -35,6 +38,6 @@ body {
     background-position: center 4px;
 }
 
-#menu .button_active {
+#menu .button_active, #menu .button_active h2 {
    background-color: #C0C0C0;
 }
