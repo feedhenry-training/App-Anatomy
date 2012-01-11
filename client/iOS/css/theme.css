@@ -69,6 +69,7 @@ body {
   height: 50px;
   z-index: 1;
   position: relative;
+  padding: 0px;
   background: #3a3a3a;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a3a3a), color-stop(50%,#141414), color-stop(50%,#000000), color-stop(100%,#000000));
   background: -webkit-linear-gradient(top,  #3a3a3a 0%,#141414 50%,#000000 50%,#000000 100%);  
