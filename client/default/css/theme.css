@@ -10,3 +10,6 @@ p {
 a: {
   color: #2879c7;
 }
+#menu .nav_item h2 {
+	background-image: none; /* We're actually not going to use background images on our mobile web-ish theme */
+}
