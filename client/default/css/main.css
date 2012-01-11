@@ -99,7 +99,8 @@ p {
 }
 
 #menu #index h2{
-  background-image:url(../img/index.png); 
+  background-image:url(../img/index.png);
+  background-size: 19px; /* Give this guy a special BG size as the PNG image is a little big */ 
 }
 
 
