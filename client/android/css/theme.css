@@ -33,9 +33,8 @@ body {
 }
 
 #menu .nav_item {
-    background-repeat: no-repeat;
+    background-image: none;
     border-bottom: 2px solid #C0C0C0;
-    background-position: center 4px;
 }
 
 #menu .button_active, #menu .button_active h2 {
