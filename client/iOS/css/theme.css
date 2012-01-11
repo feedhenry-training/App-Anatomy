@@ -94,9 +94,7 @@ body {
 }
 
 #menu #cloud h2{
-  background-size: 25px;
-   background-repeat: no-repeat;
-  background-image:url(../img/cloud.png); 
+  background-size: 25px; 
   background-position: center 12px;
 }
 #menu #cloud h2:hover,
