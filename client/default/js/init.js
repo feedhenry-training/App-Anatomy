@@ -15,12 +15,13 @@ function init () {
   getTabData(setContentPane);
   
   // init iScroll  
-  function loaded() {
+  /*function loaded() {
     setTimeout(function () {
       myScroll = new iScroll('content');
     }, 100);
   }
   window.addEventListener('load', loaded, false);
+  */
   
   // Show the default tab
   $('.default').show();

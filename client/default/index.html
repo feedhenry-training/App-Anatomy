@@ -20,7 +20,17 @@
         <div id="tab4" class="main_view tab"></div>
       </div>
     </div>
-
+  
+  <script type="text/javascript">
+  var myScroll;
+  function loaded() {
+    setTimeout(function () {
+      myScroll = new iScroll('content');
+    }, 100);
+  }
+  window.addEventListener('load', loaded, false);
+  </script>
+  
   <div id="footer">
     <div id="bottom1"></div>
     <div id="bottom2"></div>
