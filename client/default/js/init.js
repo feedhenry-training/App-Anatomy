@@ -17,7 +17,7 @@ function init () {
   // init iScroll  
   function loaded() {
     setTimeout(function () {
-      myScroll = new iScroll('content', {vScrollbar:false});
+      myScroll = new iScroll('content');
     }, 100);
   }
   window.addEventListener('load', loaded, false);
@@ -50,7 +50,7 @@ function init () {
   });
 
   // Bind the function for the reload button so it will refresh the tab data
-  $('#reload_wrapper input').bind('click', getTabData);
+  $('#reload_button').bind('click', getTabData);
 }
 
 

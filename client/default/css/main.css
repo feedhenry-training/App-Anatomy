@@ -48,17 +48,18 @@ p {
   background-color:#fff;
   margin:0;
   padding:0;
-  font-family:verdana,arial,sans-serif;
+  font-family: verdana,arial,sans-serif;
 }
 
 #content {
   background-color: #eee;
   font-size:12px;
-  position: absolute;
+  position: relative;
   z-index: 1;
   height: 400px;
-   width: 100%;
+  width: 88%;
   overflow: auto;
+  margin: 0px auto;
 }
 
 .tab {

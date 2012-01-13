@@ -5,13 +5,30 @@ p {
 a{
    color: #2879c7;
 }
+
+
 body {
-   background-color: black; 
+  background-image: linear-gradient(bottom, rgb(38,43,50) 24%, rgb(3,3,3) 5%);
+  background-image: -o-linear-gradient(bottom, rgb(38,43,50) 24%, rgb(3,3,3) 51%);
+  background-image: -moz-linear-gradient(bottom, rgb(38,43,50) 24%, rgb(3,3,3) 51%);
+  background-image: -webkit-linear-gradient(bottom, rgb(38,43,50) 24%, rgb(3,3,3) 51%);
+  background-image: -ms-linear-gradient(bottom, rgb(38,43,50) 24%, rgb(3,3,3) 51%);
+  
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.04, rgb(38,43,50)),
+    color-stop(0.81, rgb(3,3,3))
+  );
+  color: #FDFDFD;
 }
 
 #wrapper, #content {
   background-color: transparent;
   background-image: none;
+  font-family: Robotica, Droid, Droid Sans, Droid Sans Mono, Droid Serif, DroidSans, DroidSansMono, DroidSerif;
+  font-size: 1em;
 }
 
 /* Setup our layout so the navigation looks like android, at the top of the page. */
@@ -21,28 +38,56 @@ body {
 }
 
 #content {
-  margin: 0 5px;
   text-align: justify;
-  min-height: 300px;
 }
 
 #menu {
   padding: 0px;
-  height: 40px;
+  height: 50px;
 }
 
 #menu .nav_item h2 {
-  padding-top: 28px;
+  color: #858585;
+  padding-top: 37px;
   background-color: #000;
-  background-size: 25px;
+  background-size: 37px;
   background-position: center 2px;
 }
 
 #menu .nav_item {
-    background-image: none;
-    border-bottom: 2px solid #C0C0C0;
+  background-image: none;
+  border-bottom: 2px solid #2787AA;
+}
+
+#menu #cloud h2, #menu #index h2, #menu #intro h2, #menu #packages h2{
+  background-position: center 6px;
+  background-size: 25px;
+}
+
+#menu #cloud h2 {
+ background-position: center 11px; 
+ background-size: 32px;
+}
+#menu #index h2 {
+ background-position: center 6px; 
+ background-size: 20px;
+}
+#menu #packages h2 {
+ background-position: center 8px; 
+ background-size: 28px;
 }
 
 #menu .button_active, #menu .button_active h2 {
-   background-color: #C0C0C0;
+  background-color: #2787AA;
+  color: #FFF;
+}
+
+#reload_button{
+  width: 89.5%;
+  margin-left: 5.5%; 
+  background: #454545;
+  border: 1px;
+  box-shadow: 1px 1px 2px #666;
+  border-top: 1px solid #CCC;  
+  color: #fff;
 }
