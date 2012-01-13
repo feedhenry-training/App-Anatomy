@@ -13,37 +13,63 @@ p {
   -moz-border-radius: 5px;
   border-radius: 5px;
   padding: 3px;
+
 }
 
-#reload_wrapper {
-  padding:0px 20px;
+*{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
 }
 
-#reload_wrapper input {
-  width:100%;
+
+#top1, #bottom1, #bottom2 {
+  width : 100%;
+} 
+
+#top1 img, #bottom2 img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+#footer {
+ position: absolute;
+ bottom: 0px; 
+ width: 100%;
+}
+
+#reload_button {
+  padding: 0px 20px;
+  width: 100%;
 }
 
 #wrapper {
   background-image:url(../img/background.png);
   background-repeat:repeat-x;
   background-color:#fff;
-  min-height:360px;
   margin:0;
   padding:0;
   font-family:verdana,arial,sans-serif;
 }
 
-#logo img {
-  padding:4px;
-  display: block;
-  margin: 0 auto;
-}
-
 #content {
-  padding:7px;
-  margin: 0 20px;
   background-color: #eee;
   font-size:12px;
+  position: absolute;
+  z-index: 1;
+  height: 400px;
+   width: 100%;
+  overflow: auto;
+}
+
+.tab {
+ padding: 2px 7px;
+ margin: 0px 10px; 
+}
+
+#scroller {
+  position:absolute; 
+  width:100%;
+  padding:0;
 }
 
 .main_view {
@@ -71,6 +97,7 @@ p {
   text-align:center;
 }
 
+
 .nav_item {
   cursor:pointer;
 }
@@ -88,22 +115,30 @@ p {
   font-weight:400;
   line-height:10px;
   background-repeat: no-repeat;
+  background-position: center 10px;
 }
 
 #menu #cloud h2{
   background-image:url(../img/cloud.png); 
 }
-
 #menu #packages h2{
   background-image:url(../img/packages.png); 
 }
-
 #menu #index h2{
   background-image:url(../img/index.png);
   background-size: 19px; /* Give this guy a special BG size as the PNG image is a little big */ 
 }
-
-
 #menu #intro h2{
   background-image:url(../img/intro.png); 
 }
+
+#logo {
+  height: 50px;
+}
+
+/*
+#iScrollOuter {
+    position:relative;
+    z-index:1;
+    width: 100%;
+}*/

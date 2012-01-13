@@ -17,14 +17,34 @@ body {
   background: transparent;
 }
 
-*{
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
-}
-
 a: {
   color: #2879c7;
 }
 
+
+#top1, #bottom1, #bottom2 {
+  width : 100%;
+} 
+
+#top1{
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bccd), color-stop(50%,#889bb3), color-stop(50%,#8195af), color-stop(100%,#6d84a2));
+  background: -webkit-linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
+  background: linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
+  border-top: 1px solid #cdd5df;
+  border-bottom: 1px solid #2d3642; 
+}
+
+#top1 img, #bottom2 img {
+  padding:4px;
+  display: block;
+  margin: 0 auto;
+}
+
+#reload_button {
+  position: relative;
+  width: 100%;
+  padding: 0px 15px 0px 15px;
+}
 
 body {
   background-color: black;
@@ -40,36 +60,24 @@ body {
   position: relative;
 }
 
-#reload_wrapper {
-  position: relative; 
-  padding: 10px 15px 10px 15px;
-}
-
-#logo img {
-  height:9.5%;
-}
 
 #logo {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bccd), color-stop(50%,#889bb3), color-stop(50%,#8195af), color-stop(100%,#6d84a2));
-  background: -webkit-linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
-  background: linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
-  border-top: 1px solid #cdd5df;
-  border-bottom: 1px solid #2d3642;
+  
 }
 
 #hidegap {
   background-color: black; 
   position: fixed;
-  top: 97%;
+  top: 98%;
   min-height: 3%;
   min-width: 100%;
 }
 
 #menu{
-  height: 50px;
+  height: 44px;
+  padding: 0px 5px;
   z-index: 1;
   position: relative;
-  padding: 0px;
   background: #3a3a3a;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a3a3a), color-stop(50%,#141414), color-stop(50%,#000000), color-stop(100%,#000000));
   background: -webkit-linear-gradient(top,  #3a3a3a 0%,#141414 50%,#000000 50%,#000000 100%);  
@@ -96,8 +104,7 @@ body {
 
 #menu #cloud h2{
   background-size: 25px;
-   background-repeat: no-repeat;
-  background-image:url(../img/cloud.png); 
+  background-repeat: no-repeat; 
   background-position: center 12px;
 }
 #menu #cloud h2:hover,
@@ -110,7 +117,6 @@ body {
   background-size: 22px;
   background-repeat: no-repeat;
   background-position: center 10px;
-  background-image:url(../img/packages.png); 
 }
 #menu #packages h2:hover,
 #menu #packages h2:focus:hover {
@@ -121,8 +127,7 @@ body {
 #menu #index h2{
   background-size: 17px;
   background-repeat: no-repeat;
-  background-position: center 10px;
-  background-image:url(../img/index.png); 
+  background-position: center 10px; 
 }
 #menu #index h2:hover,
 #menu #index h2:focus:hover {
@@ -132,9 +137,7 @@ body {
 
 #menu #intro h2{
   background-size: 20px;
-  background-repeat: no-repeat;
   background-position: center 10px;
-  background-image:url(../img/intro.png); 
 }
 #menu #intro h2:hover,
 #menu #intro h2:focus:hover {

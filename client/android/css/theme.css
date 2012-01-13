@@ -16,8 +16,14 @@ body {
 
 /* Setup our layout so the navigation looks like android, at the top of the page. */
 
+#top2{
+  color: white; 
+}
+
 #content {
   margin: 0 5px;
+  text-align: justify;
+  min-height: 300px;
 }
 
 #menu {

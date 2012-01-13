@@ -1,5 +1,6 @@
 #content {
   background-color: #ddd;
+  text-align: justify;
 }
 
 p {
@@ -10,6 +11,24 @@ p {
 a: {
   color: #2879c7;
 }
-#menu .nav_item h2 {
-	background-image: none; /* We're actually not going to use background images on our mobile web-ish theme */
+
+#reload_button {
+  width: 89.5%;
+  margin-left: 5.5%;
+}
+
+#menu #cloud h2{
+  background-image: none; 
+}
+#menu #packages h2{
+  background-image: none; 
+}
+#menu #index h2{
+  background-image: none; 
+}
+#menu #intro h2{
+  background-image: none;  
+}
+#menu .button_active {
+  background-position:0px -100px;
 }

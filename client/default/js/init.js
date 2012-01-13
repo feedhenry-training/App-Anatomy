@@ -1,15 +1,26 @@
 $fh.ready(function () {
   init();
 });
+var myScroll;
 
 function init () {
   // Load the menu bar 
+  setUpLogo();
   setUpMenuBar();
+  setUpReloadButton();
   
   // Resolve the data to display in the tabs. Pass setContentPane function 
   // as a callback - we do not want setContentPane called until the tab
   //  data has been loaded.
   getTabData(setContentPane);
+  
+  // init iScroll  
+  function loaded() {
+    setTimeout(function () {
+      myScroll = new iScroll('content', {vScrollbar:false});
+    }, 100);
+  }
+  window.addEventListener('load', loaded, false);
   
   // Show the default tab
   $('.default').show();
@@ -28,13 +39,20 @@ function init () {
       $('.pageTitle').text(title);
 
       $('.main_view').hide();
-      $(targetId).show();            
+      $(targetId).show(); 
+      
+      // Resize the scroller for each tab on click
+      /*var mainHeight = $(this).outerHeight();
+      $(this).height(mainHeight);*/
+      myScroll.refresh();
+      
     });
   });
 
   // Bind the function for the reload button so it will refresh the tab data
   $('#reload_wrapper input').bind('click', getTabData);
 }
+
 
  
 function setUpMenuBar() {
@@ -46,6 +64,24 @@ function setUpMenuBar() {
 
   // Clone the hidden menu bar into the appropriate container
   menu_container.html(menu.clone());
+}
+
+function setUpReloadButton(){
+  // Check prefs to see whenre menu bar should be placed - top or bottom
+  var reload_container = $(prefs.reload_container);
+
+  // Clone the hidden menu bar into the appropriate container
+  reload_container.html("<input id='reload_button' type='button' value='Reload'>");
+}
+
+
+
+function setUpLogo(){
+  // Check prefs to see whenre menu bar should be placed - top or bottom
+  var logo_container = $(prefs.logo_container);
+
+  // Clone the hidden menu bar into the appropriate container
+  logo_container.html(" <div id='logo'><img id='logo' src='img/logo.png'/></div>");
 }
 
 
@@ -106,23 +142,28 @@ function getTabData(callback) {
   
 
 function setContentPane() {
-  // Can function in util.js to get the viewport information
-  var viewport = getViewport();
-
-  // Work out the space occupied by the header and footer;
-  var headerHeight = $('#header').outerHeight();
-  var footerHeight = $('#footer').outerHeight();
-
-  // Calculate the content height
-  var contentHeight = viewport.height - (headerHeight + footerHeight);
-
-  var hfc = headerHeight + footerHeight + contentHeight;
-  //console.log('v=' + viewport.height + '; h=' + headerHeight + '; f=' + footerHeight + '; c=' + contentHeight + '; h+f+c = ' + hfc);
+  var viewportHeight, pad, header_height, footer_height, top, bottom, windowHeight;
   
-  // Allow for the padding on the content div
-  contentHeight = contentHeight - 20;
-  $('#content').height(contentHeight);
+  // User outer height to ensure borders are included in height
+  header_height = $("#header").outerHeight(); 
+  footer_height = $("#footer").outerHeight();
+  
+  top = (header_height) + "px";
+  bottom = footer_height+"px";
 
+  //log.debug("top: "+ top + ", bottom: "+bottom);
+  windowHeight = window.height;
+  if ('undefined' === typeof windowHeight || null === windowHeight) {
+    windowHeight = $(window).height();  
+  }
+  
+  $('#wrapper').height(windowHeight);
+
+  viewportHeight = windowHeight - (footer_height + header_height);
+
+  $("#content").height(viewportHeight);
+  //$("#content").css("top",top);
+  //$("#content").css("bottom",bottom);
 }
 
 function setUpTabs(config, callback) {
@@ -132,7 +173,7 @@ function setUpTabs(config, callback) {
   // Iterate over each div defined in the content div.
   // Each of these divs represents a pane for displaying data
   // associated with a specific tab
-  $('#content div').each(function(index) {
+  $('#content div.tab').each(function(index) {
 
     // Get the id of the div
     var tabContentId = this.id;
@@ -151,9 +192,11 @@ function setUpTabs(config, callback) {
   if( callback && typeof(callback) === 'function' ) {
     callback();
   }
+ 
 }
 
 function setTabData(tabContent, tabData) {
+   
   // Clear tab content first
   tabContent.empty();
   
@@ -173,4 +216,3 @@ function setTabData(tabContent, tabData) {
     tabContent.append(paragraph);
   }
 }
-
