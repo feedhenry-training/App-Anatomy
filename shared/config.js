@@ -16,8 +16,8 @@ var config = {
       "Nam congue fringilla odio non pulvinar. In id neque leo, vitae vehicula massa. Cras varius orci posuere massa congue quis vulputate libero varius. Quisque rutrum tellus vel nisi interdum id congue mauris mattis. Proin suscipit elit id magna blandit dignissim facilisis tellus pharetra. Aenean justo quam, egestas in ornare ac, gravida in leo. Donec viverra ante vel lectus consectetur vitae consectetur justo euismod. Etiam ligula sem, tristique sed sollicitudin vitae, pharetra vel sapien. Nam non sem dignissim velit fermentum tincidunt sit amet sit amet lectus. Integer lobortis luctus tortor et tempor. Aliquam id molestie libero. Nunc erat risus, convallis quis feugiat at, lobortis non orci. Sed a felis ante, ut rhoncus massa. Suspendisse potenti."
     ],
     tab3: [
-      'The "bottom_nav" package contains an override prefs.js which positions the tabs at the bottom of the app.',
-      'The "theme2" package contains a different UI theme - which consists of some different css and different images.',
+      'The extra packages contain an override prefs.js which positions the tabs at different areas on screen.',
+      'The iOS and Android packages contain different UI themes - which consist of some different css and different images.',
       'Try adding each of these packages to the Studio Preview under the Configuration accordion item and see the differences after refreshing this preview.'
     ],
     tab4: [
