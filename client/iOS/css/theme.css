@@ -10,7 +10,7 @@ body {
   background-image: url(../img/iOSbackground.png); 
   background-size: 10%; 
 }
-
+ 
 #wrapper, #header, #content {
   background-color: none;
   background-image: none;
@@ -47,9 +47,8 @@ a: {
   padding: 5px 15px;
   border-radius: 6px;
   border: 1px solid black;
-  margin: 10px auto;
+  margin: 10px 0px 0px 10.5%;
   width: 80%;
-  margin-left: 10.5%;
   color: black;
   font-size: 0.9em;
   background-image: linear-gradient(bottom, rgb(172,169,172) 48%, rgb(204,204,204) 50%);
@@ -78,8 +77,9 @@ body {
   font-size: 0.825em;
   text-align: justify;
   margin: 0px ;
-  margin-left: 3%;
+  margin-left: -2%;
   position: relative;
+  width: 98%;
 }
 
 

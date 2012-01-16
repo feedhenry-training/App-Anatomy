@@ -48,7 +48,7 @@ p {
   background-color:#fff;
   margin:0;
   padding:0;
-  font-family: verdana,arial,sans-serif;
+  font-family: verdana, arial, sans-serif;
 }
 
 #content {
@@ -57,7 +57,7 @@ p {
   position: relative;
   z-index: 1;
   height: 400px;
-  width: 88%;
+  width: 100%;
   overflow: auto;
   margin: 0px auto;
 }
