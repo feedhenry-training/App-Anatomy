@@ -24,6 +24,10 @@ body {
   color: #FDFDFD;
 }
 
+#bottom2 {
+  border-top: 2px solid #2787AA;
+}
+
 #wrapper, #content {
   background-color: transparent;
   background-image: none;
@@ -84,10 +88,18 @@ body {
 
 #reload_button{
   width: 89.5%;
-  margin-left: 5.5%; 
+  margin-left: 5.5%;
+  margin-bottom: 10px;
   background: #454545;
-  border: 1px;
-  box-shadow: 1px 1px 2px #666;
-  border-top: 1px solid #CCC;  
-  color: #fff;
+  border-top: 1px solid white;
+  border-bottom: 2px solid black;
+  border-radius: 1px;
+  color: white;
+}
+#reload_button:hover,
+#reload_button:focus:hover {
+  background: #2DA2CD;
+  box-shadow: none;
+  border: 2px solid rgba(22, 81, 103, .5);
+  border-radius: 5px;
 }

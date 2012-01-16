@@ -15,6 +15,8 @@ body {
   background-color: none;
   background-image: none;
   background: transparent;
+  font-family: Robotica, Droid, Droid Sans, Droid Sans Mono, Droid Serif, DroidSans, DroidSansMono, DroidSerif;
+  font-size: 1em;
 }
 
 a: {
@@ -42,8 +44,27 @@ a: {
 
 #reload_button {
   position: relative;
-  width: 100%;
-  padding: 0px 15px 0px 15px;
+  padding: 5px 15px;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin: 10px auto;
+  width: 80%;
+  margin-left: 10.5%;
+  color: black;
+  font-size: 0.9em;
+  background-image: linear-gradient(bottom, rgb(172,169,172) 48%, rgb(204,204,204) 50%);
+  background-image: -o-linear-gradient(bottom, rgb(172,169,172) 48%, rgb(204,204,204) 50%);
+  background-image: -moz-linear-gradient(bottom, rgb(172,169,172) 48%, rgb(204,204,204) 50%);
+  background-image: -webkit-linear-gradient(bottom, rgb(172,169,172) 48%, rgb(204,204,204) 50%);
+  background-image: -ms-linear-gradient(bottom, rgb(172,169,172) 48%, rgb(204,204,204) 50%);
+  
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.48, rgb(172,169,172)),
+    color-stop(0.5, rgb(204,204,204))
+  );
 }
 
 body {
@@ -57,6 +78,7 @@ body {
   font-size: 0.825em;
   text-align: justify;
   margin: 0px ;
+  margin-left: 3%;
   position: relative;
 }
 
@@ -87,11 +109,8 @@ body {
    position: relative;
 }
 
-#menu h2 {
-  font-family: Arial;
-  font-size: 0.75em;
-  color: white;
-  padding-top:34px;
+#menu h2{
+  padding-top: 34px;
 }
 
 #menu .button_active {
