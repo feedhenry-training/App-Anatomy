@@ -5,25 +5,18 @@ $fh.ready(function () {
 var myScroll;
 
 function init () {
+  
+  myScroll = new iScroll('content');
+  
   // Load the menu bar 
-  setUpLogo();
   setUpMenuBar();
+  setUpLogo();
   setUpReloadButton();
   
   // Resolve the data to display in the tabs. Pass setContentPane function 
   // as a callback - we do not want setContentPane called until the tab
   //  data has been loaded.
   getTabData(setContentPane);
-  
-  // init iScroll  
-  /*
-  function loaded() {
-    setTimeout(function () {
-      myScroll = new iScroll('content');
-    }, 100);
-  }
-  window.addEventListener('load', loaded, false);
-  */
   
   
   
@@ -221,3 +214,6 @@ function setTabData(tabContent, tabData) {
     tabContent.append(paragraph);
   }
 }
+
+
+
