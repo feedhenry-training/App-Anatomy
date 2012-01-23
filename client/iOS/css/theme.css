@@ -15,7 +15,6 @@ body {
   background-color: none;
   background-image: none;
   background: transparent;
-  font-family: Robotica, Droid, Droid Sans, Droid Sans Mono, Droid Serif, DroidSans, DroidSansMono, DroidSerif;
   font-size: 1em;
 }
 
@@ -74,7 +73,7 @@ body {
 #content {
   padding: 0px 5px 0px 5px;
   font-family: Helvetica;
-  font-size: 0.825em;
+  font-size: 1em;
   text-align: justify;
   margin: 0px ;
   margin-left: -2%;
@@ -99,6 +98,7 @@ body {
   height: 44px;
   padding: 0px 5px;
   z-index: 1;
+  padding-bottom: 8px;
   position: relative;
   background: #3a3a3a;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a3a3a), color-stop(50%,#141414), color-stop(50%,#000000), color-stop(100%,#000000));
