@@ -28,7 +28,7 @@ a: {
 } 
 
 #top1{
- background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bccd), color-stop(50%,#889bb3), color-stop(50%,#8195af), color-stop(100%,#6d84a2));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bccd), color-stop(50%,#889bb3), color-stop(50%,#8195af), color-stop(100%,#6d84a2));
   background: -webkit-linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
   background: linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
   border-top: 1px solid #cdd5df;
@@ -104,11 +104,18 @@ body {
   top: 90%;
 }
 
+#menu, #footer {
+ height: 52px; 
+}
+
+#menu .nav_item {
+  width: 24.25%; 
+  height: 47px;
+}
+
 #menu{
-  height: 44px;
   padding: 0px 5px;
   z-index: 1;
-  padding-bottom: 8px;
   width: 100%;
   background: #3a3a3a;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a3a3a), color-stop(50%,#141414), color-stop(50%,#000000), color-stop(100%,#000000));
