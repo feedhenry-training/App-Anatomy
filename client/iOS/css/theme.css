@@ -65,6 +65,11 @@ a: {
   );
 }
 
+#reload_button:hover,
+#reload_button:focus:hover {
+  background: rgb(172,169,172);
+}
+
 body {
   background-color: black;
   position : relative;
@@ -94,12 +99,17 @@ body {
   min-width: 100%;
 }
 
+#bottom1 #menu, #bottom2 #menu{
+  position: fixed;
+  top: 90%;
+}
+
 #menu{
   height: 44px;
   padding: 0px 5px;
   z-index: 1;
   padding-bottom: 8px;
-  position: relative;
+  width: 100%;
   background: #3a3a3a;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a3a3a), color-stop(50%,#141414), color-stop(50%,#000000), color-stop(100%,#000000));
   background: -webkit-linear-gradient(top,  #3a3a3a 0%,#141414 50%,#000000 50%,#000000 100%);  

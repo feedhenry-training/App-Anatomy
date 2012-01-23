@@ -9,8 +9,8 @@ function init () {
   myScroll = new iScroll('content');
   
   // Load the menu bar 
-  setUpMenuBar();
   setUpLogo();
+  setUpMenuBar(); 
   setUpReloadButton();
   
   // Resolve the data to display in the tabs. Pass setContentPane function 
