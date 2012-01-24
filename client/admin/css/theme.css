@@ -1,0 +1,87 @@
+*{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
+
+
+body {
+  background-image: url(../img/iOSbackground.png); 
+  background-size: 12%; 
+  font-family: Helvetica;
+}
+
+input{
+  margin: 10px;
+}
+
+table{
+  margin: 0 auto;
+}
+
+#wrapper {
+  font-family: Helvetica;
+}
+
+#form {
+  background-color: #FEFEFE;
+  font-family: Helvetica;
+  font-weight: 600;
+  font-size: 0.9em;
+  border: solid 1px #888;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 85px;
+  left: 5%;
+}
+
+#header {
+  height: 55px;
+  font-family: Helvetica;
+  font-size: 0.8em;
+  text-align: center;
+  color: #3B455B; 
+  text-shadow: 0px 1px #fff; 
+  
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bccd), color-stop(50%,#889bb3), color-stop(50%,#8195af), color-stop(100%,#6d84a2));
+  background: -webkit-linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
+  background: linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8195af 50%,#6d84a2 100%);
+  border-top: 1px solid #cdd5df;
+  border-bottom: 1px solid #2d3642;  
+}
+
+#submit_button {
+  position: absolute;
+  top: 410px;
+  height: 35px;
+  padding: 5px 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 1px solid black;
+  margin: 10px 0px 0px 10.5%;
+  width: 80%;
+  color: black;
+  font-family: Helvetica;
+  font-size: 1em;
+  color: #000; 
+  text-shadow: 0px 1px #fff;
+  
+  background-image: linear-gradient(bottom, rgb(200,201,205) 48%, rgb(235,235,235) 50%);
+  background-image: -o-linear-gradient(bottom, rgb(200,201,205) 48%, rgb(235,235,235) 50%);
+  background-image: -moz-linear-gradient(bottom, rgb(200,201,205) 48%, rgb(235,235,235) 50%);
+  background-image: -webkit-linear-gradient(bottom, rgb(200,201,205) 48%, rgb(235,235,235) 50%);
+  background-image: -ms-linear-gradient(bottom, rgb(200,201,205) 48%, rgb(235,235,235) 50%);
+  
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.48, rgb(200,201,205)),
+    color-stop(0.5, rgb(235,235,235))
+  );
+}
+
+#submit_button:hover,
+#submit_button:focus:hover {
+  background: rgb(172,169,172);
+}
