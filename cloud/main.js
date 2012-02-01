@@ -12,6 +12,5 @@ exports.getConfig = function(params, callback) {
   console.log('in getConfig with ts:' + params.ts);
   var cfg = require("config.js");
   console.log('got cfg:' + typeof cfg);
-  console.log(JSON.stringify(cfg));
   return callback(null, {data: cfg.config});
 };
