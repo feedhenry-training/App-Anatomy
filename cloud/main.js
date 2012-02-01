@@ -9,7 +9,9 @@ var util = require('util');
  * Trivial example of pulling in a shared config file.
  */
 exports.getConfig = function(params, callback) {
-  console.log('in getConfig');
+  console.log('in getConfig with ts:' + params.ts);
   var cfg = require("config.js");
+  console.log('got cfg:' + typeof cfg);
+  console.log('cfg.config:' + cfg.config);
   return callback(null, {data: cfg.config});
 };
