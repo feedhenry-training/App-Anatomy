@@ -1,4 +1,4 @@
-var config = {
+exports.config = {
   tabData: {
     tab1: [
       'This app demonstrates how to use client-side packages to configure element positioning and present different UI themes.',
