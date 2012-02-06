@@ -30,7 +30,4 @@ var config = {
   }
 };
 
-if ('undefined' === typeof exports) {
-  exports = {};
-}
 exports.config = config;
