@@ -104,7 +104,7 @@ function getTabData(callback) {
     $fh.data({
       act: 'save',
       key: 'config',
-      val: JSON.stringify(config)
+      val: JSON.stringify(configData)
     }, function (val) {
       // Save successful, continue with initialisation
       setUpTabs(configData, callback);      
