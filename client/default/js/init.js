@@ -5,8 +5,8 @@ $fh.ready(function () {
 var myScroll;
 
 function init () {
-  if (null == iScroll) {
-    window.iScroll = exports.iScroll;
+  if ('undefined' === typeof iScroll) {
+    iScroll = exports.iScroll;
   }
   myScroll = new iScroll('content');
   
