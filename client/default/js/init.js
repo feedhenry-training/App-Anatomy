@@ -5,7 +5,9 @@ $fh.ready(function () {
 var myScroll;
 
 function init () {
-  
+  if (null == iScroll) {
+    window.iScroll = exports.iScroll;
+  }
   myScroll = new iScroll('content');
   
   // Load the menu bar 
