@@ -18,7 +18,9 @@ The /cloud directory contains all server-side JavaScript. At a minimum this dire
 /shared
 -------
 The /shared directory contains files which can be included as client side files from the /client directory and also requires in cloud files from files within the /cloud directory.
+
 The most common use case for the /shared directory is to store configuration information (for example in a config.js file). This config.js file would then be included using a standard script tag in the main index.html file (usually within /client/default) - this ensures that the contents of the config.js file are available to the app at all times.
+
 When an app is built, the version of the config.js file as it existed at that point in time is bundled with the app, and this becomes the default configuration for the app. However, the configuration settings may change over time. Rather than having to re-build the app if the configuration changes, a more robust solution is to make a call (on app start up) to a server-side function - using $fh.act() - which will return the latest configuration. If there is network connectivity, the app can retrieve the latest configuration on start up (and store it on device using $fh.data() ). If there is no network connectivity, fall back values can be read for the locally linked config.js file.
 
 Packages
@@ -226,6 +228,9 @@ The iOS package theme is different from the others as it uses CSS3 gradients for
 Updating the configuration
 --------------------------
 The contents for each of the tabs in this app are configured in /shared/config.js. Each time the app starts up, the latest config is read from the server and used. This allows for elements of the app to be changed post-deploy. This can be demonstrated by deploying the App to a device and launching it. Then modify the shared/config.js file in the studio and save it. Relaunching the app or pressing the 'Reload' button will trigger the app to get the latest config from the server and use it for rendering the app.
+
 The name for this pattern is the Data Loading Design Pattern. This pattern has a dual fallback mechanism so that the app is always able to launch. In the event of a connectivity problem, the config cannot be retrieved from the server. The app will fallback to using the last retrieved config which it would have saved previously to local data storage. If there isn't a local config to use, the app uses the bundled config.js in the shared folder.
+
 Again, this can be demonstrated with the app deployed to a device. If you switch to 'Airplane' mode or turn off networking on the device, this will trigger the first fallback to happen. The shared/config.js file can be modified on the server, and the app won't be able to get the latest configuration. Relaunching the app or pressing 'Reload' wont update any of the content. If you then switch back on network connectivity and reload the app, the updated content will be shown.
+
 Launching the App straight after installing it with network connectivity turned off will force the second fallback to happen. There is no network to get the latest config. In addition, there is no saved previous config. The only remaining option is to used the config bundled with the app.
