@@ -54,7 +54,7 @@ Practical Example
 =================
 There is a template app in the App Studio called "App Anatomy" which demonstrates practical examples of using packages to customize app appearance and behavior. The following screen shots are all from the "App Anatomy" template. The name of the packages applied are included with each screen shot.
 
-<a href="default/en/img/android_iOS1.png"><img class="alignnone size-full wp-image-1171" src="default/en/img/android_iOS1.png" alt="" width="498" height="480" /></a>
+![Android vs iOS](android_ios.png)
 
 Default package
 ---------------
