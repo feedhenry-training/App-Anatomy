@@ -54,7 +54,7 @@ Practical Example
 =================
 There is a template app in the App Studio called "App Anatomy" which demonstrates practical examples of using packages to customize app appearance and behavior. The following screen shots are all from the "App Anatomy" template. The name of the packages applied are included with each screen shot.
 
-![Android vs iOS](App-Anatomy/blob/master/android_ios.png)
+![Android vs iOS](App-Anatomy/raw/master/android_ios.png)
 
 Default package
 ---------------
