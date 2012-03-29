@@ -107,29 +107,29 @@ To use the iScroll library we need to:
 
 ### Create a container div that iScroll will use.
 ```html
-&lt;div id="content"&gt;&lt;/div&gt;
+<div id="content"></div>
 ```
 
 ### Inside this div create another div
 ```html
-&lt;div id="content"&gt;
-  &lt;div id="scroller"&gt;
-    &lt;!-- Your Content Here --&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<div id="content">
+  <div id="scroller">
+    <!-- Your Content Here -->
+  </div>
+</div>
 ```
 
 ### Add your content
 ```html
-&lt;div id="content"&gt;
-  &lt;div id="scroller"&gt;
-    &lt;p&gt;List Item #1&lt;/p&gt;
-    &lt;p&gt;List Item #2&lt;/p&gt;
-    &lt;p&gt;List Item #3&lt;/p&gt;
-    &lt;p&gt;List Item #4&lt;/p&gt;
-    &lt;p&gt;List Item #5&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<div id="content">
+  <div id="scroller">
+    <p>List Item #1</p>
+    <p>List Item #2</p>
+    <p>List Item #3</p>
+    <p>List Item #4</p>
+    <p>List Item #5</p>
+  </div>
+</div>
 ```
 
 ### Set the size of the scrollable area (CSS or Javascript)
