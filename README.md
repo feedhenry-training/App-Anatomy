@@ -13,13 +13,13 @@ The client directory is divided into packages - incremental units of functional
 
 /cloud
 ------
-The /cloud directory contains all server-side JavaScript. At a minimum this directory must contain a file called main.js. All functions assigned to the 'exports' object within main.js are public and can be called from client side JavaScript using <a gen-link="feedhenry-api#$fh.act">$fh.act()</a>. Any other JavaScript files created in the cloud directory need to be required using the nodejs require syntax if you wish to use them e.g. 'require('myfile.js')'.
+The /cloud directory contains all server-side JavaScript. At a minimum this directory must contain a file called main.js. All functions assigned to the 'exports' object within main.js are public and can be called from client side JavaScript using $fh.act(). Any other JavaScript files created in the cloud directory need to be required using the nodejs require syntax if you wish to use them e.g. 'require('myfile.js')'.
 
 /shared
 -------
 The /shared directory contains files which can be included as client side files from the /client directory and also requires in cloud files from files within the /cloud directory.
 The most common use case for the /shared directory is to store configuration information (for example in a config.js file). This config.js file would then be included using a standard script tag in the main index.html file (usually within /client/default) - this ensures that the contents of the config.js file are available to the app at all times.
-When an app is built, the version of the config.js file as it existed at that point in time is bundled with the app, and this becomes the default configuration for the app. However, the configuration settings may change over time. Rather than having to re-build the app if the configuration changes, a more robust solution is to make a call (on app start up) to a server-side function - using <a gen-link="feedhenry-api#$fh.act">$fh.act()</a> - which will return the latest configuration. If there is network connectivity, the app can retrieve the latest configuration on start up (and store it on device using <a gen-link="feedhenry-api#$fh.data">$fh.data()</a> ). If there is no network connectivity, fall back values can be read for the locally linked config.js file.
+When an app is built, the version of the config.js file as it existed at that point in time is bundled with the app, and this becomes the default configuration for the app. However, the configuration settings may change over time. Rather than having to re-build the app if the configuration changes, a more robust solution is to make a call (on app start up) to a server-side function - using $fh.act() - which will return the latest configuration. If there is network connectivity, the app can retrieve the latest configuration on start up (and store it on device using $fh.data() ). If there is no network connectivity, fall back values can be read for the locally linked config.js file.
 
 Packages
 ========
