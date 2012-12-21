@@ -13,3 +13,8 @@ exports.getConfig = function(params, callback) {
   var cfg = require("config.js");
   return callback(null, {data: cfg.config});
 };
+
+exports.timestamp = function( params, callback ) {
+  var now = getTime() ;
+  return callback( null, {timestamp: now }) ;
+};
