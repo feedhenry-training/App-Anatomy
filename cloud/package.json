@@ -1,13 +1,13 @@
 {
   "name": "fh-app",
   "version": "0.1.0",
-  "dependencies" : {        
-    "fh-webapp" : "*",
-    "fh-api" : "*",
-    "express" : "3.3.4"
+  "dependencies": {
+    "fh-webapp": "*",
+    "fh-api": "*",
+    "express": "3.3.4"
   },
-  "devDependencies":{
-    "proxyquire":"0.4.1",
+  "devDependencies": {
+    "proxyquire": "0.4.1",
     "whiskey": "0.8.3"
   }
 }
