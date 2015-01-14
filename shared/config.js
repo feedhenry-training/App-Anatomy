@@ -21,7 +21,7 @@ var config = {
       'Try adding each of these packages to the Studio Preview under the Configuration accordion item and see the differences after refreshing this preview.'
     ],
     tab4: [
-      'The content for the tabs in this app are configured in /shared/config.js',
+      'The content for these tabs in this app are configured in /shared/config.js',
       'When the app starts up, the latest config is read from the server, and used.',
       'If the config can\'t be retrieved, a fallback of the last known configuration is used.',
       'If there was no last configuration, the app defaults to using the config bundled with the app.',
